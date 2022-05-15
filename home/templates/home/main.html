@@ -1,0 +1,28 @@
+<!--
+<html>
+<head>
+    <title>{{ settings.APP_NAME }}</title>
+</head>
+<body>
+    <h1>Welcome to {{ settings.APP_NAME }}</h1>
+    <p>
+    Hello world.
+    </p>
+</body>
+</html>
+-->
+
+<html>
+    <head><title> Homepage </title></head>
+    <body>
+        <ul>
+            <!--<li><p><a href="/polls"> A Polls Application </a></p></li>-->
+            <li><p><a href="{% url 'polls:index' %}"> A Polls Application </a></p></li>
+            <!--<li><p><a href="/hello"> Test the session </a></p>-->
+            <li><p><a href="{% url 'hello:session' %}"> Test the session </a></p>
+            <li><p><a href="/autos">Autos CRUD</a></p></li>
+            <li><p><a href="/cats"> Cats CRUD</a></p></li>
+            <li><p><a href="/ads"> Sell Bazar </a></p></li>    
+        </ul>
+    </body>
+</html>
